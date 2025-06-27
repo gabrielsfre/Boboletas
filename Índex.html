@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tela1">
+    <button id="botao">Clique aqui</button>
+    <script>
+        let clique = 0;
+        const botao = document.getElementById("botao");
+
+        botao.addEventListener("click", () => {
+            clique++;
+            if (clique === 1) {
+                botao.style.position = "absolute";
+                botao.style.top = "20%";
+                botao.style.left = "70%";
+            } else if (clique === 2) {
+                window.location.href = "segunda.html";
+            }
+        });
+    </script>
+</body>
+</html>
